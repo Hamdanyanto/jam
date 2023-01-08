@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jam simple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(76, 18, 130); display: flex; justify-content: center; align-items: center;">
+
+    <div class="container">
+        <div id="jam" class="jam"></div>
+
+            <script>
+                setInterval(() => {
+                    const waktu = new Date();
+                    const jam = waktu.getHours();
+                    const menit = waktu.getMinutes();
+                    const detik = waktu.getSeconds();
+                    document.getElementById("jam").innerHTML = jam + ":" + menit + ":" + detik;
+                },1000);
+            </script>
+    </div>    
+</body>
+</html>
